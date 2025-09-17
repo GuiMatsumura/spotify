@@ -33,4 +33,12 @@ public class Audio {
     public void reproduzirAudio () {
         this.totalDeReproducoes ++;
     }
+
+    public String getFicha () {
+        return """
+                Título: %s
+                Total de reproduções: %d
+                Total de curtidas: %d
+                """.formatted(titulo, totalDeReproducoes, curtidas);
+    }
 }
